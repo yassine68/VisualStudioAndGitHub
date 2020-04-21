@@ -15,10 +15,14 @@ namespace DisplayHello
             this.Name = null;
             this.DateOfBirth = null;
         }
-        public Employee(string name, DateTime dateOfBirth):this()
+        public Employee(string name, DateTime dateOfBirth) : this()
         {
             Name = name;
             DateOfBirth = dateOfBirth;
         }
-}
+        public override int GetHashCode()
+        {
+            return this.ID.GetHashCode() ^ this.Name.GetHashCode();
+        }
+    }
 }
