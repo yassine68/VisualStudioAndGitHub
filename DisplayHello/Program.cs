@@ -7,7 +7,6 @@ namespace DisplayHello
     {
         static void Main(string[] args)
         {
-
             List<Employee> employees = new List<Employee>()
             {
                 new Employee { ID = 1, Name = "Jhon", DateOfBirth = new DateTime(1992, 05, 25) },
@@ -19,6 +18,7 @@ namespace DisplayHello
             {
                 Console.WriteLine(emp.ToString());
             }
+            Console.WriteLine("Program Finished.");
         }
     }
 }
